@@ -1,0 +1,410 @@
+body {
+    background-color:black;
+    font-family: Arial, Helvetica neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('MY images/black and red2.jpg') repeat;
+    background-size: 100%   ;
+    
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background:#000000;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+    transition: 0.6s ;
+   
+} 
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( #ff0000, #000000, #ffffff);
+    box-shadow: inset 0 0 0#ff0000;
+    border-radius: 3px;
+    transition: 0.6s ;
+    outline: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    transition: all 0.9s ease-in;
+
+}
+/* HEADER */
+header {
+
+    background-size: 100%;
+    padding: 20px;
+    height: 670px;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+    
+}
+.firstimg{
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    
+    
+
+}
+.secoundimg {
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 570px;
+    text-align: center;
+    margin-left: 3%;
+    
+}
+header .mobile {
+    display: none;
+}
+header a{
+    color:red;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    
+}
+.font{
+    position: fixed;
+    /* color: #181818; */
+    top: 0;
+    left: 0;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 10000;
+    background-color: rgb(0, 0, 0);
+    opacity: 92%;
+    border-style:inset;
+    border-width: 2%;
+} 
+.desktop{
+    position: sticky;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.7s;
+	transition: .4s ease-out;
+}
+.desktop:hover{
+    box-shadow: inset 0 0 0 4px rgb(252, 252, 252), inset -4px -4px 0 6px #CCC;
+    border-radius: 20px;
+    transform-origin: bottom left;
+    background-color:rgba(199, 199, 199, 0.863);
+    color: #FFF;
+}
+
+
+/* RESPONSIVE RULES */
+
+/* SECTIONS */
+
+.free{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(0,0,0,1) 100%);
+
+}
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background: url('MY images/white.jpg') repeat;
+    background-size: 100% ;
+    width: 95.7;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beats figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+.beats figure img{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: black 5px 3px 10px;
+}
+.beatstype{
+    position: relative;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+    transition: 0.9s;
+    top: 0;
+    left: 0;
+    border-style:solid;
+    text-shadow: -1px 1px 0 #000000,
+          1px 1px 0 #ff1e00,
+         1px -1px 0 #ff0000,
+        -1px -1px 0 #000000; 
+    animation: blur 1.3s ease-out infinite;  
+    /* text-shadow: 0px 0px 5px rgb(255, 0, 0), 0px 0px 7px rgb(255, 0, 0); */
+}
+.songsname{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing:1px;
+    background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+    font-weight: 900;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 1.5s linear infinite;
+    display: flex;
+    justify-content: space-evenly ;
+    align-content: space-between;
+    margin: 5px;
+    padding: 20px;
+
+}
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+@keyframes blur {
+    from {
+      text-shadow:0px 0px 10px rgb(0, 0, 0),
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+  }
+.cdbackground{
+    transform-style: preserve-3d;
+    transition: all 20.7s ease;
+     /* backface-visibility: hidden; */
+
+}
+.cdbackground:hover{
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+    /* transition: all 0.8s ease;  */
+    transition: 20.70s;
+  -webkit-transition: 25.90s;
+  -moz-transition: 20.70s;
+  -ms-transition: 20.70s;
+  -o-transition: 20.70s;
+  -webkit-transform: rotate(3600deg);
+  -moz-transform: rotate(3600deg);
+  -o-transform: rotate(3600deg);
+  -ms-transform: rotate(3600deg);
+  transform: rotate(3600deg);
+}
+.track{
+    position: absolute;
+    background-color: green;
+    background-size: 50%;
+    width: 15%;
+    height: 25%;
+    margin-bottom: 10%;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    transform: rotateY(180deg); 
+}
+@media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+@keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+/* footer */
+footer{
+    position: relative;
+    width: 85.2%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    /* color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .secaboutus{
+    margin-right: 30px;
+
+}
+footer .container .secaboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.container h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+
+}
+.secaboutus p{
+    color: #999;
+
+
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:#222 ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+.sci a:hover{
+    background: #f00;
+
+}
+.sci a .fa{
+    color: #fff;
+    font-size: 20px;
+
+}
+.quicklinks{
+    position: relative;
+    width: 25%;
+
+}
+.quicklinks li{
+    list-style: none;
+}
+.quicklinks li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    
+}
+.quicklinks li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.info{
+    position: relative;
+}
+.info li{
+    display: flex;
+    margin-bottom: 16px;
+    
+}
+.info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px; 
+
+}
+.info li span{
+    color: #999;
+}
+.info li a{
+    color: #999;
+    text-decoration: none;
+
+}
+.info li a:hover    {
+    color: #fff;
+}
+
+.copyrighttext{
+    width: 85.1%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;  
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+        background-color: #181818;
+        width: 100%;
+        display: inline-block;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .secaboutus {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    footer .container .secaboutus {
+        width: 100%;
+    }
+    .quicklinks,.contact{
+        width: 100%;
+    }
+    .copyrighttext{
+        padding: 8px 40px;
+        width: 100%;
+    }
+    .soundcloud{
+        color: #ff7700;
+    }
+    
+}
